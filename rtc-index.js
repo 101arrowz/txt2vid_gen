@@ -133,7 +133,6 @@ async function initRTC() {
             remove.disabled = true;
             const result = target.captureStream();
             const recorder = new MediaRecorder(result, {
-              mimeType: 'video/webm;codecs=vp9',
               videoBitsPerSecond: 5000000,
               audioBitsPerSecond: 200000
             });
